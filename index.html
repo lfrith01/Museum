@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        <img src="./images/met.jpg" alt="logo">
+    </div>
+     
+        <a href = "#">360PROJECT </a>
+        <a href = "#">BUY TICKETS </a>
+        <a href = "#">ABOUT US </a>
+         
+     
+    <div class="nav-btn">
+        <button class="black-btn">Login</button>
+        <button class="membership-btn">CREATE MEMBERSHIP</button>
+    </div>
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+     
+    <img src="./images/desktop 1.jpg" style="width:100%">
+     
+    </div>
+
+    <div class="mySlides fade">
+    
+    <img src="./images/desktop 1.jpg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides fade">
+     
+    <img src="./images/desktop 1.jpg" style="width:100%">
+     
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<div class="event">
+    <h1>EVENTS</h1>
+    <h2>Today</h2>
+</div>
+<div class="blog">
+    <div class="pic">
+        <img src="./images/craft event.jpg">
+        <p>Virtual Picture This-Bernd And Hilla Becher</p>
+    </div>
+    <div class="pic" >
+        <img src="./images/morning event.jpg"  >
+        <p>Member Morning Hours</p>
+    </div>
+    <div class="pic">
+        <img src="./images/children event.jpg">
+        <p>Storytime at The Met</p>
+    </div>
+</div>
+<div class="block">
+    <div class="free">
+        <img src="./images/color.PNG">
+        <div class="text-free">
+            <p class="Free">FREE</p>
+            <p>2:00 PM</p>
+        </div>
+    </div>
+    <div class="free">
+        <img src="./images/color.PNG">
+        <div class="text-free">
+            <p class="Free">FREE FOR MEMBERS</p>
+            <p>9:30 AM</p>
+        </div>
+    </div>
+    <div class="free">
+        <img src="./images/color.PNG">
+        <div class="text-free">
+            <p class="Free">FREE</p>
+            <p>10:30 AM</p>
+        </div>
+    </div>
+    
+</div>
+<div class="event">
+   
+    <h2>Follow Us</h2>
+</div>
+<div class="follow">
+    <div class="link-social">
+        <a href="#"><img src="images/Image 7.jpg"></a>
+        <a href="#"><img src="images/Image 8.jpg"></a>
+        <a href="#"><img src="images/Image 9.jpg"></a>
+        <a href="#"><img src="images/Image 10.jpg"></a>
+    </div>
+    <div class="image-follow" style="margin-right: 100px;">
+        <img src="./images/building.jpg">
+    </div>
+</div>
+<div class="footer">
+    <div class="first-section">
+        <h2>LOCATION</h2>
+        <div style="text-align: left; margin-left: 50px;">
+            <h4>The Met Fifth Avenue</h4>
+            <p>1000 Fifth Avenue</p>
+            <p>New York,NY 10028</p>
+            <p>Phone:212-535-7710</p><br>
+            <h4>The Met Cloisters</h4>
+            <p>99 Margaret Corbin Drive</p>
+            <p>Fort Tryon Park</p>
+            <p>New York,NY 10040</p>
+            <p>Phone:212-923-3700</p>
+        </div>
+    </div>
+    <div class="second">
+        <h2>SUPPORT</h2>
+        <ul>
+            <li>Membership</li><br>
+            <li>Host an Event</li><br>
+            <li>Corporate Support</li>
+        </ul>
+    </div>
+    <div class="third" >
+        <h2>CAREER</h2>
+        <div style="text-align: right; margin-right: 30px;">
+        <ul>
+            <li>Career Opportunities</li><br>
+            <li>Volunteers</li><br>
+            <li>Fellowships</li><br>
+            <li>Internships</li><li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+<br>
+
+ 
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
