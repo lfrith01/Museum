@@ -1,0 +1,251 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+.nav{
+    display: flex;
+    height: 100px;
+    background-color: white;
+    justify-content: space-between;
+}
+.logo img{
+    width: 200px;
+    padding-top: 25px;
+    padding-left: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+ 
+a {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 60px;
+    color: black;
+}
+
+.nav-btn{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-right: 30px;
+    gap: 3px;
+    align-items: center;    
+  
+}
+.black-btn{
+    background-color: black;
+    
+    color: white;
+    padding: 0;
+    width: 40%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  
+    border: none;
+   
+    
+
+}
+.membership-btn{
+    background-color: red;
+    color:white     ;
+    padding: 8px;
+    border: none;  
+    margin: 5px; 
+   
+    
+}
+ 
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container img{
+  width: 100%;
+  height: 600px;
+ 
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+ 
+ .event h1{
+   
+  
+    color: red;
+    font: sans-serif;
+    text-align: center;
+
+ }
+ .event h2{
+    color: black;
+    padding-left: 60px;
+ }
+ .blog{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+
+ }
+ .pic{
+    width: 33%;
+ }
+ .pic img{
+    width: 100%;
+    height: 400px;
+
+ }
+ .pic p{
+    font-size:24px;
+ }
+ .block{
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+ }
+ .free{
+    display: flex;
+    width: 33.3%;
+    
+ }
+ .free img{
+    width: 50px;
+    margin: 20px;
+ }
+ .Free{
+    font-style: italic;
+  
+ }
+ .text-free{
+    display: flex;
+    flex-direction: column;
+ }
+ .follow{
+    display: flex;
+    margin-left: 90px;
+
+ }
+ .link-social{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+ }
+ .link-social img{
+    width: 40px;
+ }
+ .image-follow{
+    width: 40%;
+ }
+ .image-follow img{
+    width: 450px;
+ }
+.footer{
+    margin-top: 50px;
+    background-color: red;
+    height: auto;
+    color: white;
+    display: flex;
+    text-align: center;
+  
+}
+ .first-section{
+    width: 33%;
+ }
+ .first-section h2{
+    text-align: center;
+ }
+ .second{
+    width: 33%;
+    text-align: center;
+ 
+   
+ }
+ .second h2{
+    text-align: center;
+ }
+ 
+ .second li{
+    list-style: none;
+    padding-top: 10px;
+ }
+ .third{
+    width: 33%;
+    
+    
+ }
+ 
+ .third li{
+    list-style: none;
+    padding-top: 10px;
+ }
